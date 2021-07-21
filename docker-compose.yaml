@@ -1,0 +1,25 @@
+version: '3.7'
+
+services:
+  
+  maps:
+    image: mohamnag/nginx-file-browser
+    container_name: maps-xonotic
+    ports: 
+      - 8080:80
+    volumes:
+      - /opt/xon/data/:/opt/www/files
+
+  game:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: xonotic:0.8.2
+    container_name: game-xonotic
+    ports:
+      - 26000:26000/tcp
+      - 26000:26000/udp
+      - 26010:26010
+    volumes:
+      - /opt/xon/:/root/.xonotic/
+
