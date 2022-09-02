@@ -1,7 +1,6 @@
-    
-FROM debian:latest
+FROM ubuntu:20.04
 
-ENV XONOTIC_DOWNLOAD_URL=http://dl.xonotic.org/xonotic-0.8.2.zip
+ENV XONOTIC_DOWNLOAD_URL=http://dl.xonotic.org/xonotic-0.8.5.zip
 
 RUN \
   apt-get update && \
