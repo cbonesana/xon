@@ -1,0 +1,5 @@
+bot_ai_aimskill_firetolerance_distdegrees = 0
+bot_ai_aimskill_firetolerance_maxdegrees = 0
+bot_ai_aimskill_firetolerance_mindegrees = 0
+bot_ai_aimskill_offset = 0
+bot_ai_enemydetectioninterval = 0.5
